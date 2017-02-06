@@ -24,7 +24,7 @@
 
 
     <TextView
-        android:id="@+id/bookName"
+        android:id="@+id/bookTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/book_title"
@@ -33,18 +33,22 @@
         android:layout_alignBottom="@id/bookCover"
         android:layout_alignTop="@id/bookInfoBg"
         android:textColor="@color/colorBookInfoText"
+        android:maxLines="1"
+        android:ellipsize="end"
         tools:text="A Song of Ice and Fire"/>
 
 
     <TextView
-        android:id="@+id/bookAuthor"
+        android:id="@+id/bookAuthors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/book_Author"
-        android:layout_marginRight="@dimen/book_Author"
-        android:textSize="@dimen/book_Author"
-        android:layout_alignBottom="@id/bookName"
+        android:layout_marginLeft="@dimen/book_authors"
+        android:layout_marginRight="@dimen/book_authors"
+        android:textSize="@dimen/book_authors"
+        android:layout_alignBottom="@id/bookTitle"
         android:textColor="@color/colorBookInfoText"
+        android:maxLines="1"
+        android:ellipsize="end"
         tools:text="George R. R. Martin" />
 
 </RelativeLayout>

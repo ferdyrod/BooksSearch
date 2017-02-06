@@ -3,6 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="book_title">14sp</dimen>
-    <dimen name="book_Author">12sp</dimen>
+    <dimen name="book_authors">12sp</dimen>
     <dimen name="bookInfoBGHeight">30dp</dimen>
 </resources>
