@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/bookCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <View
+        android:id="@+id/bookInfoBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bookInfoBGHeight"
+        android:layout_alignBottom="@id/bookCover"
+        android:background="@color/colorBookInfoBackground" />
+
+
+    <TextView
+        android:id="@+id/bookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/book_title"
+        android:layout_marginRight="@dimen/book_title"
+        android:textSize="@dimen/book_title"
+        android:layout_alignBottom="@id/bookCover"
+        android:layout_alignTop="@id/bookInfoBg"
+        android:textColor="@color/colorBookInfoText"
+        tools:text="A Song of Ice and Fire"/>
+
+
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/book_Author"
+        android:layout_marginRight="@dimen/book_Author"
+        android:textSize="@dimen/book_Author"
+        android:layout_alignBottom="@id/bookName"
+        android:textColor="@color/colorBookInfoText"
+        tools:text="George R. R. Martin" />
+
+</RelativeLayout>
