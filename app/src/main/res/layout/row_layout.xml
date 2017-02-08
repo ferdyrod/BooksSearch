@@ -2,15 +2,16 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="@dimen/activity_vertical_margin"
-    android:layout_marginRight="@dimen/activity_vertical_margin">
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin"
+    android:layout_marginBottom="@dimen/card_margin_bottom" >
 
     <ImageView
         android:id="@+id/bookCover"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         tools:src="@mipmap/ic_launcher"/>
@@ -19,7 +20,7 @@
         android:id="@+id/bookInfoBg"
         android:layout_width="match_parent"
         android:layout_height="@dimen/bookInfoBGHeight"
-        android:layout_alignBottom="@id/bookCover"
+        android:layout_below="@id/bookCover"
         android:background="@color/colorBookInfoBackground" />
 
 
@@ -27,13 +28,12 @@
         android:id="@+id/bookTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/book_title"
-        android:layout_marginRight="@dimen/book_title"
-        android:textSize="@dimen/book_title"
-        android:layout_alignBottom="@id/bookCover"
+        android:layout_marginLeft="@dimen/book_margin"
+        android:layout_marginRight="@dimen/book_margin"
+        android:textSize="@dimen/book_title_size"
         android:layout_alignTop="@id/bookInfoBg"
         android:textColor="@color/colorBookInfoText"
-        android:maxLines="1"
+        android:maxLines="2"
         android:ellipsize="end"
         tools:text="A Song of Ice and Fire"/>
 
@@ -42,10 +42,11 @@
         android:id="@+id/bookAuthors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/book_authors"
-        android:layout_marginRight="@dimen/book_authors"
-        android:textSize="@dimen/book_authors"
-        android:layout_alignBottom="@id/bookTitle"
+        android:layout_marginLeft="@dimen/book_margin"
+        android:layout_marginRight="@dimen/book_margin"
+        android:textSize="@dimen/book_authors_size"
+        android:layout_alignBottom="@id/bookInfoBg"
+        android:gravity="bottom"
         android:textColor="@color/colorBookInfoText"
         android:maxLines="1"
         android:ellipsize="end"

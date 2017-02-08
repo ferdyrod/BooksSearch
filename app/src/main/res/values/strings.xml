@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">BooksSearch</string>
+    <string name="app_name">Books Eventos</string>
+    <string name="title_error">No Title Found</string>
+    <string name="description_not_found">ENo Description Found</string>
 </resources>
